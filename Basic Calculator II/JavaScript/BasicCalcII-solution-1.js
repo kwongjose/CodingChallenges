@@ -16,13 +16,12 @@ var calculate = function (s) {
             i++;
         }
 
-
         // check what the last op was
         if (op === '-') {
-            rest.push(parseInt(-num)); // If it was '-' the currnt number should be a negative
+            rest.push(parseInt(-num)); // If it was '-' the currant number should be a negative
         } else if (op === '+') {
             rest.push(parseInt(num))
-        } else if (op === '*') { // evaluate muliplacation and division right away
+        } else if (op === '*') { // evaluate multiplication and division right away
             rest.push(parseInt(rest.pop()) * parseInt(num));
         } else if (op === '/') {
             let num1 = rest.pop();

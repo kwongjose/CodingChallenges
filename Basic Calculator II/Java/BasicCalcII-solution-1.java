@@ -17,7 +17,7 @@ public class Solution {
         for(int i = 0; i < len; i++){
             if( Character.isDigit(s.charAt(i)) ){
                 // Build up the number if Num has non zero value multiply by 10 so s='12' becomes 12 rather then 3
-                // - '0' ensures that we get the number from the ascii value
+                // subtracting the asci value of '0' ensures that we get the number from the ascii value
                 num = num * 10 + s.charAt(i) - '0';
             }
             // if The charter is not a digit, blank or last number

@@ -5,7 +5,7 @@
 var isOneBitCharacter = function(bits) {
     // loop over all bits in array
     for(let i = 0; i < bits.length; i++){
-        let bit = bits[i];
+        const bit = bits[i];
         // If the bit is 1 it must be part of a 2 bit character
         if(bit === 1 ){
             // Increment i so we skip the next bit

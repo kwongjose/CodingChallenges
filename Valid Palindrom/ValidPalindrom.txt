@@ -15,3 +15,6 @@ Output: false
 Constraints:
 
 s consists only of printable ASCII characters.
+
+Link: https://leetcode.com/problems/valid-parentheses/
+Level: Easy

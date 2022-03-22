@@ -26,3 +26,6 @@ Example 5:
 
 Input: "{[]}"
 Output: true
+
+Link: https://leetcode.com/problems/valid-palindrome/
+Level: Easy

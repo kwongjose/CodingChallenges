@@ -23,3 +23,6 @@ Example 3:
 
 Input: 701
 Output: "ZY"
+
+Link: https://leetcode.com/problems/excel-sheet-column-title/
+Level: Easy

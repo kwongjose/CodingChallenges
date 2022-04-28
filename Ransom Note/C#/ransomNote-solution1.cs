@@ -5,13 +5,14 @@ public class Solution {
         }
         // iterate over the length of the magazine and update a tuple in the map for the number each char is in the note and magazine
         Dictionary<char, (int, int)> map = new Dictionary<char, (int, int)>();
+        
         for(int idx = 0; idx < magazine.Length; idx++) {
           
             char magChar = magazine[idx];
             if(map.ContainsKey(magChar)) {
                (int, int) t = map[magChar];
                 t.Item1 += 1;
-                      map[magChar] = t;
+                map[magChar] = t;
             } else {
                 (int, int) t = (1, 0);
                 map.Add(magChar, t);
@@ -19,7 +20,7 @@ public class Solution {
             // if past the length of the note don't check 
             if(idx <= ransomNote.Length-1){
                 char ransomChar = ransomNote[idx];
-                if(map.ContainsKey(ransomChar)) {
+                if(map.ContainsKey(ransomChar)){
                     (int, int) t = map[ransomChar];
                     t.Item2 += 1;
                     map[ransomChar] = t;

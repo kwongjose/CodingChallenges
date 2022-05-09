@@ -5,10 +5,6 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func Main() {
-
-}
-
 // Recursive solution
 /**
  * Definition for singly-linked list.
@@ -22,7 +18,7 @@ func reverseList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
-	// recursivly call reverseList until the exit condition is hit. The returned node is the new node and last node in list
+	// recursively call reverseList until the exit condition is hit. The returned node is the new node and last node in list
 	nh := reverseList(head.Next)
 	// The node after the current node should point to the current node
 	head.Next.Next = head

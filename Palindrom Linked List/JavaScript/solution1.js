@@ -18,10 +18,10 @@
     return true
 };
 
-//**
+/**
  * Recurs until we get to the end of the list. 
 * Then return the last node
-* Compaire that node to the first node in the list
+* Compare that node to the first node in the list
 * if equal return the next node from the front of the list
 * if not return false
  * @param {*} head  The head or first node
